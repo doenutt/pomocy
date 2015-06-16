@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Formularz PHP</title>
+		<meta charset="utf-8" />		
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	</head>
+	<body>
+		<h4 id="header">Wypełnij pola:</h4>
+		<form action="filled.php" sendmethod="POST">
+			<label for="imie">Imie: </label>
+			<input id="imie" />
+			<label for="wiek">Wiek: </label>
+			<input id="wiek" />
+			<label for="zainteresowania">Twoje hobby: </label>
+			<select name="zainteresowania" required="required">
+			<option label="pilkanozna">piłka nożna
+			<option label="siatkowka">siatkówka
+			<option label="tenis">tenis
+			</select>
+			<input type="submit" value="Wyślij" />
+		</form>
+	</body>
+</html>
